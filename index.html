@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator - Password</title>
+
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+
+    
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/130a5bacf7.js" crossorigin="anonymous"></script>
+
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+    <div class="input-box">
+        <h2>Ramdon <span>Password Generator</span> App</h2>
+        <div class="input">
+            <input type="text" placeholder="Create your password" id="password" class="clipboard" readonly="">
+            <span class="copy"><i class="fa-regular fa-copy"></i></span>
+        </div>
+
+        <button id="btn" onclick="getPassword()">Generate Password</button>
+    </div>
+
+    <div class="creditos">
+        <span></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

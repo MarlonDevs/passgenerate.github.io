@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Console, sans-serif;
+}
+
+:root{
+    --bg-color: #2d4059;
+    --box-color: #e5e5e5;
+    --span-color: #EA5455;
+    --shadow-color: #272121;
+    --input-color: #afaeae;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+.input-box{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 10px var(--shadow-color);
+    background-color: var(--box-color);
+}
+
+.input-box h2{
+    font-size: 24px;
+    color: var(--bg-color);
+}
+
+.input-box span{
+    color: var(--span-color);
+}
+
+.input{
+    display: flex;
+}
+
+.input input{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--input-color);
+}
+
+input.clipboard:focus{
+    outline: none;
+}
+
+input.clipboard::-moz-selection{
+    background: transparent;
+}
+
+input.clipboard::selection{
+    background: transparent;
+}
+
+.input input::placeholder{
+    opacity: .6;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+.input .copy{
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: var(--bg-color);
+}
+
+#btn{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--span-color);
+    color: var(--box-color);
+}
+
+#btn:hover{
+    transition: .3s ease-in-out;
+    background-color: var(--span-color);
+    box-shadow: 5px 5px var(--shadow-color);
+}
+
+.creditos{
+    margin-top: 40rem;
+}
+
+/*Alert style*/
+
+.popup-class{
+    border-radius: 20px;
+}
